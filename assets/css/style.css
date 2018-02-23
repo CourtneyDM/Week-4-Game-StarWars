@@ -2,11 +2,11 @@ body {
     background-image: url("../images/bg1.jpg"); 
     font-family: 'Share Tech Mono', monospace;
     font-size: 18px;
-    padding-left: 10px;
-    
+    padding-left: 10px;    
 }
 
 .characters {
+    background-color: #FFF;
     border: 2px solid green;
     float: left;
     font-size: 14px;

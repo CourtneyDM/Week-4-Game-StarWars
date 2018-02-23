@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Included Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-
-    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
 
     <title>Star Wars Battle</title>
 </head>
@@ -24,22 +24,22 @@
         <div class="characters">
             <p class="name">Darth Vader</p>
             <img src="assets/images/darth-vader.jpg" alt="Darth Vader" id="character1">
-            <p>100</p>
+            <p class="healthPoints"></p>
         </div>
         <div class="characters">
             <p class="name">Darth Maul</p>
             <img src="assets/images/darth-maul.jpg" alt="Darth Maul" id="character2">
-            <p>200</p>
+            <p class="healthPoints"></p>
         </div>
         <div class="characters">
             <p class="name">Luke Skywalker</p>
             <img src="assets/images/luke-skywalker.jpg" alt="Luke Skywalker" id="character3">
-            <p>300</p>
+            <p class="healthPoints"></p>
         </div>
         <div class="characters">
             <p class="name">Obi Wan Kenobi</p>
             <img src="assets/images/obi-wan.jpg" alt="Obi Wan Kenobi" id="character4">
-            <p>400</p>
+            <p class="healthPoints"></p>
         </div>
     </div>
 
@@ -68,7 +68,9 @@
         <button id="attack">Attack</button>
         <p>Defender</p>
     </div>
-    <script src="assets/javascript/game.js"></script>
 </body>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<script src="assets/javascript/game.js"></script>
 
 </html>
