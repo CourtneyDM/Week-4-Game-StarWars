@@ -14,14 +14,14 @@ $(document).ready(function () {
     $(".characters").on("click", function () {
         $(this).siblings().removeClass("characters");
         $(this).siblings().addClass("enemy");
-
         $(".enemies").append($(this).siblings());
-        $("#player1").prepend($(this));
-        // $(this).siblings().detach();
+        $("#player1").append($(this));
     });
 
-    $(".enemies").on("click", function () {
-        $("#player2").append($(this));
+    $(".enemy").on("click", function () {
         // $(".enemies").append($(this).siblings());
+        $(this).removeClass("enemy");
+        $(this).add("id", "defender");
+        $("#player2").append($(this));
     });
 });
