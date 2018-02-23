@@ -5,7 +5,11 @@ body {
     padding-left: 10px;    
 }
 
-.characters {
+p {
+    clear: both;
+}
+
+.characters, .enemy {
     background-color: #FFF;
     border: 2px solid green;
     float: left;
@@ -14,7 +18,13 @@ body {
     text-align: center;
 }
 
-.characters img {
+.enemy {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.characters img,
+.enemy img {
     width: 100px;
     height: auto;
     padding: 5px 0;

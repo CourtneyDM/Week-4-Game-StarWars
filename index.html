@@ -13,6 +13,9 @@
     <!-- Included Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 
+    <!-- Include jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <title>Star Wars Battle</title>
 </head>
 
@@ -23,54 +26,48 @@
     <div id="selection">
         <div class="characters">
             <p class="name">Darth Vader</p>
-            <img src="assets/images/darth-vader.jpg" alt="Darth Vader" id="character1">
-            <p class="healthPoints"></p>
+            <img src="assets/images/darth-vader.jpg" alt="Darth Vader">
+            <p id="character1"></p>
         </div>
         <div class="characters">
             <p class="name">Darth Maul</p>
-            <img src="assets/images/darth-maul.jpg" alt="Darth Maul" id="character2">
-            <p class="healthPoints"></p>
+            <img src="assets/images/darth-maul.jpg" alt="Darth Maul">
+            <p id="character2"></p>
         </div>
         <div class="characters">
             <p class="name">Luke Skywalker</p>
-            <img src="assets/images/luke-skywalker.jpg" alt="Luke Skywalker" id="character3">
-            <p class="healthPoints"></p>
+            <img src="assets/images/luke-skywalker.jpg" alt="Luke Skywalker">
+            <p id="character3"></p>
         </div>
         <div class="characters">
             <p class="name">Obi Wan Kenobi</p>
-            <img src="assets/images/obi-wan.jpg" alt="Obi Wan Kenobi" id="character4">
-            <p class="healthPoints"></p>
+            <img src="assets/images/obi-wan.jpg" alt="Obi Wan Kenobi">
+            <p id="character4"></p>
         </div>
     </div>
 
     <div id="game-match">
+        <p id="player1"></p>
         <p>Your Character</p>
         <div class="enemies">
             <p class="name"></p>
             <img src="" alt="" id="enemy1">
         </div>
-        <div class="enemies">
+        <!-- <div class="enemies">
             <p class="name"></p>
             <img src="" alt="" id="enemy2">
         </div>
         <div class="enemies">
             <p class="name"></p>
             <img src="" alt="" id="enemy3">
-        </div>
-        <div class="enemies">
-            <p class="name"></p>
-            <img src="" alt="" id="enemy4">
-        </div>
-        <div id="player1"></div>
-        <div id="player2"></div>
+        </div> -->
         <p>Enemies Available to Attack</p>
         <p>Fight Section</p>
         <button id="attack">Attack</button>
-        <p>Defender</p>
+        <p class="defender">Defender</p>
+        <div id="player2"></div>
     </div>
 </body>
-<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
 <script src="assets/javascript/game.js"></script>
 
 </html>
