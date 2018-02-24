@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Variable to check if player 1 has been selected
     var isClicked = false;
 
@@ -21,9 +21,6 @@ $(document).ready(function() {
     p2_health = parseInt(p2_health);
 
     $("#attack").click(characterFight);
-
-
-
 
     // Select players to face off against each other
     function selectPlayer(player) {
