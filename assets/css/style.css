@@ -32,6 +32,7 @@ p {
 }
 
 .characters img,
+.defender img,
 .enemy img {
     width: 100px;
     height: auto;
