@@ -108,8 +108,6 @@ $(document).ready(function () {
         p2_health -= damage;
         p1_health -= counterAttack;
 
-        // console.log("Attack: " + attack + " Damage: " + damage + " Counter: " + counterAttack);
-
         // Display updated health points for both players
         $("#player1").find("p#healthPoints").text(p1_health);
         $("#player2").find("p#healthPoints").text(p2_health);
