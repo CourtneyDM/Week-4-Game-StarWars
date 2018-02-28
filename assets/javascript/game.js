@@ -60,7 +60,8 @@ $(document).ready(function () {
             $(this).siblings().removeClass("characters");
             $(".enemies").append($(this).siblings());
             $("#player1").html($(this));
-            player1 = $(this).attr('value');
+            // player1 = $(this).attr('value');
+            player1 = $(this).find('p.name');
 
             playerSelected_Audio.play();
 
@@ -82,7 +83,8 @@ $(document).ready(function () {
             $(this).removeClass("enemy");
             $(this).addClass("defender");
             $("#player2").html($(this));
-            player2 = $(this).attr('value');
+            // player2 = $(this).attr('value');
+            player2 = $(this).find('p.name');
 
             playerSelected_Audio.play();
 
