@@ -54,13 +54,13 @@ $(document).ready(function () {
         if (isClicked === false) {
 
             // Find element with id "healthPoints", assign it to p1_health
-            p1_health = $(this).find('p#healthPoints').text();
+            p1_health = $(this).find('p.healthPoints').text();
 
             $(this).siblings().addClass("enemy");
             $(this).siblings().removeClass("characters");
             $(".enemies").append($(this).siblings());
             $("#player1").html($(this));
-            player1 = $(this).attr('name');
+            player1 = $(this).attr('value');
 
             playerSelected_Audio.play();
 
@@ -77,12 +77,12 @@ $(document).ready(function () {
             $("#status").empty();
 
             // Find element with id "healthPoints", assign it to p1_health
-            p2_health = $(this).find('p#healthPoints').text();
+            p2_health = $(this).find('p.healthPoints').text();
 
             $(this).removeClass("enemy");
             $(this).addClass("defender");
             $("#player2").html($(this));
-            player2 = $(this).attr('name');
+            player2 = $(this).attr('value');
 
             playerSelected_Audio.play();
 
@@ -109,8 +109,8 @@ $(document).ready(function () {
         p1_health -= counterAttack;
 
         // Display updated health points for both players
-        $("#player1").find("p#healthPoints").text(p1_health);
-        $("#player2").find("p#healthPoints").text(p2_health);
+        $("#player1").find("p.healthPoints").text(p1_health);
+        $("#player2").find("p.healthPoints").text(p2_health);
 
         // Show amount of damage each player endured
         $("#status").append().html("<p>You attacked " + player2 + " for " + damage + " damage.</p><br><p>" + player2 + " attacked you back for " + counterAttack + " damage.</p>");
