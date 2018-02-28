@@ -28,13 +28,13 @@ p {
 
 .defender {
     background-color: #000;
-    border: 1px solid #FFF;
+    border: 2px solid #FFF;
     color: #FFF;
 }
 
 .enemy {
     background-color: #F00;
-    border: 1px solid #000;
+    border: 2px solid #000;
 }
 
 .characters img,
