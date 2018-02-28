@@ -61,7 +61,7 @@ $(document).ready(function () {
             $(".enemies").append($(this).siblings());
             $("#player1").html($(this));
             // player1 = $(this).attr('value');
-            player1 = $(this).find('p.name');
+            player1 = $(this).find('p.name').text();
 
             playerSelected_Audio.play();
 
@@ -84,7 +84,7 @@ $(document).ready(function () {
             $(this).addClass("defender");
             $("#player2").html($(this));
             // player2 = $(this).attr('value');
-            player2 = $(this).find('p.name');
+            player2 = $(this).find('p.name').text();
 
             playerSelected_Audio.play();
 
