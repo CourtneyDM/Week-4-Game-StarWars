@@ -4,7 +4,7 @@ Interactive game using jQuery to dynamically update HTML pages - Star Wars theme
 ## Objective
 Select a player from the listed characters as Player 1. The remaining characters will move to the "Enemies Available to Attack" section, from where a Player 2 will be chosen. The game is over when Player 1 has defeated all of the enemies from the game.
 
-![alt text](https://github.com/CourtneyDM/courtneydm.github.io/blob/master/public/assets/images/screenshots/_starwars-rpg.jpeg?raw=true  "Star Wars RPG")
+<!---![alt text](https://github.com/CourtneyDM/courtneydm.github.io/blob/master/public/assets/images/screenshots/_starwars-rpg.jpeg?raw=true  "Star Wars RPG")--->
 
 
 ### How It Works
